@@ -1,8 +1,8 @@
 plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
-    id("com.android.library")
-    id("org.jetbrains.compose")
+    id(libs.plugins.android.library.get().pluginId)
+    id(libs.plugins.compose.get().pluginId)
 }
 
 kotlin {

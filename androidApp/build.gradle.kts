@@ -1,7 +1,7 @@
 plugins {
     kotlin("multiplatform")
-    id("com.android.application")
-    id("org.jetbrains.compose")
+    id(libs.plugins.android.application.get().pluginId)
+    id(libs.plugins.compose.get().pluginId)
 }
 
 kotlin {
@@ -22,11 +22,11 @@ android {
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
 
     defaultConfig {
-        applicationId = "com.myapplication.MyApplication"
+        applicationId = "com.kmm.playground"
         minSdk = (findProperty("android.minSdk") as String).toInt()
         targetSdk = (findProperty("android.targetSdk") as String).toInt()
         versionCode = 1
-        versionName = "1.0"
+        versionName = (findProperty("app.version") as String)
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
