@@ -1,7 +1,6 @@
-rootProject.name = "kmm-playground"
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
-include(":androidApp")
-include(":shared")
+rootProject.name = "kmm-playground"
 
 pluginManagement {
     repositories {
@@ -33,3 +32,6 @@ dependencyResolutionManagement {
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
     }
 }
+
+include(":androidApp")
+include(":shared")
