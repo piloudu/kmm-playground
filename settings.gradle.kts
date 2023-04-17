@@ -2,6 +2,8 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 rootProject.name = "kmm-playground"
 
+includeBuild("gradle-plugins")
+
 pluginManagement {
     repositories {
         gradlePluginPortal()
