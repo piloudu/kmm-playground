@@ -1,4 +1,4 @@
-include(":conventions")
+rootProject.name = "gradle-plugins"
 
 dependencyResolutionManagement {
     repositories {
@@ -11,3 +11,5 @@ dependencyResolutionManagement {
         from(files("../gradle/libs.versions.toml"))
     }
 }
+
+include(":conventions")
