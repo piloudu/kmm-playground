@@ -2,9 +2,9 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 rootProject.name = "kmm-playground"
 
-includeBuild("gradle-plugins")
-
 pluginManagement {
+    includeBuild("gradle-plugins")
+
     repositories {
         gradlePluginPortal()
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
